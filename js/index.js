@@ -4,16 +4,27 @@ newFunction = () => {
     let valueOne = valOne;
     let valueTwo = valTwo;
 
-    let valOne = document.getElementByiS("valOne").value;
-    let valTwo = document.getElementByiS("valTwo").value;
+    let valOne = document.getElementById("valOne").value;
+    let valTwo = document.getElementById("valTwo").value;
     let total = valAnswer;
 
 
-    if(valueOne >= 0){
-        alert("Value One is equal to Value Two");
-    } else {
-        alert("Value One is Not equal to Value Two");
-    }
+    if(valueOne === plus){
+        let valAnswer = valOne + valTwo;
+        
+    }    
+
+    if(valueOne === minus){
+        let valAnswer = valOne - valTwo;
+    } 
+
+    if(valueOne === divide){
+        let valAnswer = valOne / valTwo;
+    } 
+
+    if(valueOne === times){
+        let valAnswer = valOne * valTwo
+    } 
 
     console.log(total);
 
